@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+body {
+background-color:#9CCE90;
+
+
+}
+
+.nav-bar {
+max-width: 100%;
+height:60px;
+
+padding-left: 50px;
+display: flex;
+background-color: #3EA7A9;
+justify-content: start;
+align-items: center;
+
+
+}
+
+.navigation {
+width: 30%;
+display: flex;
+list-style-type: none;
+flex-direction: row;
+color: #9CCE90;
+justify-content: space-evenly;
+font-size: 16px;
+
+}
+
+.nav-link {
+color: #9CCE90;
+text-decoration: none;
+
+}
+
+    
+
+
+ul.nav-bar {
+display: flex;    
+}
+.section-one-container {
+margin-top: 100px;  
+width: auto;
+height:auto;
+background-color: #9CCE90;
+animation-name: changebg;
+animation-duration: 3s;
+
+    /*color: #9CCE90
+    #3EA7A9*/
+}
+@keyframes changebg{
+0%{background-color: #9CCE90;}
+100%{background-color: #3EA7A9;}
+}
+
+.header {
+    text-align: center;
+   
+    font-weight: 700;
+    color: #3EA7A9;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    width: 100%;
+    font-size: 48px;
+    }
+    .heading {
+        width: 250px;
+        display: flex;
+        font-size: 32px;
+        color:#3EA7A9;
+    }
+    
+.section-one {
+/*border: 2px solid yellow;*/
+width: auto;
+height: 580px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.reflection {
+background: url("images/the-thinker.jpg") no-repeat;
+background-size: cover; 
+width: 480px;
+box-shadow: 0 3px 5px #3EA7A9; 
+}
+.text-container{
+display: flex;
+width: 20%;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+padding-top: 20px;
+
+}
+
+.description {
+width:auto;
+display: flex;
+color:#3EA7A9;
+/*text-align: center;*/
+padding-top: 20px;
+margin-bottom: 20px;
+}
+#options {
+    color: #3EA7A9;
+}
+.two-sided {
+background: url("images/the-thinker.jpg") no-repeat;
+background-size: cover;
+box-shadow: 0 3px 5px #3EA7A9;
+display: inline-block;
+margin-left: 35px;
+margin-right: 35px;
+width: 400px;
+height: 400px;
+border-radius: 8px;
+/*border: 2px solid red;*/
+}
+
+.about {
+display: flex;
+justify-content: center;
+padding-top: 90px;
+padding-left: 35px;
+font-size: 16px;
+font-weight: 600;
+line-height: 2;
+width: 28%;
+color: #3EA7A9;    
+}
+.two-sided:hover {
+background: url("images/midlife-crisis1.jpg") no-repeat;
+background-size: cover;
+border-radius: 8px;
+}
+
+.pit {
+    color:#3EA7A9;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 100px;
+    background-color:#1b4c50;
+}
+
+.section-two {
+display: flex;
+flex-direction: row;
+padding-right: 80px;
+padding-top: 100px;
+background-color: #1b4c50;
+width: auto;
+height: 800px;
+/*border: 2px solid black;*/
+
+}
+.pitfalls {
+    display: flex;
+    width: 18%;
+    height: auto;
+    padding-top: 80px;
+    padding-left: 100px;
+    margin-right: 150px;
+    color:#3EA7A9;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 2;
+     
+}
+
+input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    
+    
+   
+}
+input[type="checkbox"]:before {
+    content: url('images/midlife-crisis2.jpg');
+    display: block;
+    width: 992px;
+    height: 646px;
+    overflow: hidden;
+    
+}
+input[type="checkbox"]:checked:before {
+    content: url('images/middleaged-content.jpg');
+}
+
+
+        
+.section-three {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color:#3EA7A9 ;
+    height: 700px;
+    width: auto;
+    /*border: 2px red solid;*/
+}
+
+.how-to {
+display: flex;
+font-size: 48px;
+font-weight: 600;
+text-align: center;
+justify-content: center;
+color:#9CCE90;
+background: #3EA7A9;
+width: auto;
+padding-top: 100px;
+padding-bottom: 100px;
+
+}
+
+.solution {
+width: auto;
+display: flex;
+/*padding-right: 120px;*/
+height: auto;
+font-size: 24px;
+color:#9CCE90;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    border: #9CCE90 solid 4px;
+    border-radius: 4px;
+}
+legend {
+    font-size: 16px;
+    background-color:#9CCE90; 
+}
+input[type=submit] {
+   width: 50%;
+   height: 30px;
+   background-color:#9CCE90 ;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   margin-top: 30px;
+   border-radius: 4px;
+   border: 2px solid #3EA7A9;
+  
+   }
+
+   input[type=text] {
+    width: auto;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   }
+
+
+.wiseman {
+    width:700px;
+    height: 600px;
+    /*padding-left: 300px;*/
+}
+
+
+/*<img class="do-dont" src="images/midlife-crisis2.jpg" />
+    <img class="do-dont-two" src="images/midlife-sec-two.png" />*/
